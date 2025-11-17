@@ -1,0 +1,23 @@
+{
+  "name": "vdo-ninja-webinar-poc",
+  "version": "1.0.0",
+  "description": "Professional webinar platform using VDO.Ninja for ultra-low latency streaming",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "preview": "npx http-server -p 8000"
+  },
+  "keywords": [
+    "webinar",
+    "vdo.ninja",
+    "streaming",
+    "webrtc",
+    "video-conferencing"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}

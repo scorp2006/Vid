@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webinar Platform - Welcome</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="landing-wrapper">
+            <div class="hero-section">
+                <div class="logo">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                        <rect width="60" height="60" rx="12" fill="url(#gradient)"/>
+                        <path d="M30 15L40 25L30 35L20 25L30 15Z" fill="white"/>
+                        <path d="M30 25L40 35L30 45L20 35L30 25Z" fill="white" opacity="0.7"/>
+                        <defs>
+                            <linearGradient id="gradient" x1="0" y1="0" x2="60" y2="60">
+                                <stop offset="0%" style="stop-color:#667eea"/>
+                                <stop offset="100%" style="stop-color:#764ba2"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <h1 class="title">Professional Webinar Platform</h1>
+                <p class="subtitle">Powered by VDO.Ninja - Ultra-low latency streaming technology</p>
+            </div>
+
+            <div class="role-selection">
+                <h2>Join Webinar Session</h2>
+                <p class="instruction">Select your role to continue</p>
+
+                <div class="cards-container">
+                    <div class="role-card" onclick="joinAs('host')">
+                        <div class="card-icon host-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                                <circle cx="12" cy="13" r="4"/>
+                            </svg>
+                        </div>
+                        <h3>Join as Host</h3>
+                        <p>Start broadcasting and present to your audience</p>
+                        <ul class="features-list">
+                            <li>Stream video & audio</li>
+                            <li>Share your screen</li>
+                            <li>Monitor viewers</li>
+                            <li>Full broadcast controls</li>
+                        </ul>
+                        <button class="btn btn-primary">Start Hosting</button>
+                    </div>
+
+                    <div class="role-card" onclick="joinAs('viewer')">
+                        <div class="card-icon viewer-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </div>
+                        <h3>Join as Viewer</h3>
+                        <p>Watch the live webinar and participate</p>
+                        <ul class="features-list">
+                            <li>HD video streaming</li>
+                            <li>Interactive chat</li>
+                            <li>Ask questions</li>
+                            <li>Real-time engagement</li>
+                        </ul>
+                        <button class="btn btn-secondary">Join Audience</button>
+                    </div>
+
+                    <div class="role-card" onclick="joinAs('control')">
+                        <div class="card-icon control-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M12 1v6m0 6v6M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24M1 12h6m6 0h6M5.64 18.36l4.24-4.24m4.24-4.24l4.24-4.24"/>
+                            </svg>
+                        </div>
+                        <h3>Admin Control</h3>
+                        <p>Manage the webinar session and participants</p>
+                        <ul class="features-list">
+                            <li>Director view</li>
+                            <li>Participant management</li>
+                            <li>Layout controls</li>
+                            <li>Session monitoring</li>
+                        </ul>
+                        <button class="btn btn-control">Access Control Panel</button>
+                    </div>
+                </div>
+
+                <div class="room-input-section">
+                    <label for="roomId">Room ID (optional - leave empty for new session)</label>
+                    <div class="input-group">
+                        <input type="text" id="roomId" placeholder="Enter existing room ID or leave blank">
+                        <button class="btn-icon" onclick="generateRoomId()" title="Generate new Room ID">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <p>Ultra-low latency • No installation required • Works on all devices</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js?v=2"></script>
+</body>
+</html>
